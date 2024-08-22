@@ -22,7 +22,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-	// testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 	// Add the two dependencies below
 	implementation 'org.springframework.data:spring-data-jdbc'
@@ -43,6 +43,6 @@ test {
 		showStackTraces true
 
 		// Change from false to true
-		showStandardStreams = true
+		showStandardStreams = false
 	}
 }
